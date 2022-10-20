@@ -7,7 +7,7 @@ Basic react native project v0.68.0 setup with NativeBase UI library v3.4.x &amp;
 - React Native v0.68, 
 - NativeBase (UI library) v3.4.x, 
 - Basic folder structure, 
-- React Navigation (stack & drawer) v6.x, 
+- React Navigation (stack, tab & drawer) v6.x, 
 - React native permissions v3.6.1, 
 - Responsive file added in utils, 
 - MobxStateTree (state management), 
@@ -19,4 +19,6 @@ Basic react native project v0.68.0 setup with NativeBase UI library v3.4.x &amp;
 - React native internet connection alert v0.1.9, 
 - React native background timer v2.4.1,  
 - React native image picker v4.10.0 
+- React native reanimated v2.11.0
+- React native gesture handler (import in app.js)
 
