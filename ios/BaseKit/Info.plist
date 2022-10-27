@@ -22,6 +22,69 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+
+ <!-- 🚨 Keep only the permissions used in your app 🚨 -->
+
+  <!-- <key>NSAppleMusicUsageDescription</key>
+  <string>Permission to access Apple Music</string> -->
+  
+  <!-- <key>NSBluetoothAlwaysUsageDescription</key>
+  <string>Permission to access bluetooth</string> -->
+
+  <!-- <key>NSBluetoothPeripheralUsageDescription</key>
+  <string>Permission to access bluetooth</string> -->
+
+  <!-- <key>NSCalendarsUsageDescription</key>
+  <string>Permission to access calendar</string> -->
+
+  <!-- <key>NSCameraUsageDescription</key>
+  <string>Permission to access camera</string> -->
+
+  <!-- <key>NSContactsUsageDescription</key>
+  <string>Permission to access contacts</string> -->
+
+  <!-- <key>NSFaceIDUsageDescription</key>
+  <string>Permission to access FaceID / TouchID</string> -->
+
+  <!-- 🚨 location from here 🚨-->
+
+  <!-- <key>NSLocationAlwaysUsageDescription</key>
+  <string>Permission to access location</string> -->
+
+  <!-- <key>NSLocationTemporaryUsageDescriptionDictionary</key>
+  <dict>
+    <key>YOUR-PURPOSE-KEY</key> 
+    <string>Permission to access location once</string>
+  </dict> -->
+
+  <!-- <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Permission to access location when app is open!</string> -->
+
+  <!-- 🚨 to here 🚨 -->
+
+  <!-- <key>NSMotionUsageDescription</key>
+  <string>Permission to access motion</string> -->
+
+  <!-- <key>NSPhotoLibraryUsageDescription</key>
+  <string>Permission to access photo library</string> -->
+
+  <!-- <key>NSPhotoLibraryAddUsageDescription</key>
+  <string>Permission to make changes in photo library</string> -->
+
+  <!-- <key>NSRemindersUsageDescription</key>
+  <string>Permission to access reminders</string> -->
+
+  <!-- <key>NSSpeechRecognitionUsageDescription</key>
+  <string>Permission to access speech recognition</string> -->
+
+  <!-- <key>NSSiriUsageDescription</key>
+  <string>Permission to access siri</string> -->
+
+  <!-- <key>NSUserTrackingUsageDescription</key>
+  <string>Permission to access user trackage</string> -->
+
+  <!-- 🚨 🚨 -->
+
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
