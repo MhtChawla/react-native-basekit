@@ -10,12 +10,12 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 - React native reanimated v2.11.0
 - React Navigation (stack, tab & drawer) v6.x
 - Responsive file added in utils (learn from anirudh)
-- MobxStateTree (state management)
+- MobxStateTree or MST (state management)
 - React native permissions v3.6.1
 - Axios v1.1.3 (with index.js file setup for post, get, put, delete)
 - React native toast message v2.1.5
 - React native vector icons v9.2.0
-- React native fast image v8.6.1 (un-done)
+- React native fast image v8.6.1
 - React native webview v11.23.1 (un-done)
 - @async-storage v1.17.10, (un-done)
 - React native internet connection alert v0.1.9 (un-done)
@@ -50,12 +50,8 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 
 9. Toast, always import & add <Toast /> at end of innercode in App.js
 
-10. Vector-Icons, all the icon fonts have been integrated & we can use this way ->
+10. Vector-Icons, Use with <Icon /> from 'native-base' & find the icon names here -> https://oblador.github.io/react-native-vector-icons/ (try avoiding fontAwesome5 icons, they might break code)
 
-    import AntDesign from 'react-native-vector-icons/AntDesign'
-    import {Icon} from 'native-base'
-    <Icon as={AntDesign} name="meh" color="coolGray.800" size={20} />
+11. Fast Image, always use <FastImage /> component rather than <Image>.
 
-AntDesign is the name of font, you can replace the font name accordingly & find all the icon names for fonts here -> https://oblador.github.io/react-native-vector-icons/ (try avoiding fontAwesome5 icons, they might break code)
-
-11. 
+12. 
