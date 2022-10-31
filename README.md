@@ -11,8 +11,9 @@ Basic react native project v0.68.0 setup with NativeBase UI library v3.4.x &amp;
 - React Navigation (stack, tab & drawer) v6.x
 - Responsive file added in utils (learn from anirudh)
 - MobxStateTree (state management)
-- React native permissions v3.6.1 
-- Axios (with index.js file setup for post, get, put, delete) (un-done)
+- React native permissions v3.6.1
+- Axios v1.1.3 (with index.js file setup for post, get, put, delete)
+- React native toast message v2.1.5
 - React native vector icons v9.2.0 (un-done)
 - React native fast image v8.6.1 (un-done)
 - React native webview v11.23.1 (un-done)
@@ -28,15 +29,25 @@ Basic react native project v0.68.0 setup with NativeBase UI library v3.4.x &amp;
 
 2. NativeBase, wrap App.js around <NativeBaseProvider> & to write full code
 
-3. Reanimated, always import this at top of app.js -> import 'react-native-gesture-handler' 
+3. Reanimated, always import this at top of app.js -> import 'react-native-gesture-handler'
 
 4. Responsive-ui, file added in src/utils/responsive-ui.js use.......
 
 5. MST, just read the doc in src/store/help.txt
 
-6. React-native Permissions, info.plist for ios & androidmanifest.xml for android, uncomment permission you want to use in app & use function 
-requestDevicePermission('permission name') from src/utils/request-permissions.js
+6. React-native Permissions, info.plist for ios & androidmanifest.xml for android, uncomment permission you want to use in app & use function
+   requestDevicePermission('permission name') from src/utils/request-permissions.js
 
-7. Config.js, please provide APP_NAME of your app here!
+7. Config.js, please provide APP_NAME, BASE_URL of your app here and other config details (if any)!
 
-8. 
+8. axios.js, easily send post & get calls on api using functions at src/utils/axios.js. USE LIKE THIS IN APP -->
+
+   const xyz = async() => {
+   var response = await getData('endpoint','body')
+   }
+   
+   where xyz is any function like pressHandler etc..
+
+9. Toast, always import & add <Toast /> at end of innercode in App.js
+
+10. 
