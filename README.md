@@ -1,6 +1,6 @@
 # react-native-basekit
 
-Basic react native project v0.68.0 setup with NativeBase UI library v3.4.x &amp; preset folder structure &amp; other basic necessties
+Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI library v3.4.x &amp; preset folder structure &amp; other basic necessties
 
 # This repo includes setup of following
 
@@ -14,14 +14,14 @@ Basic react native project v0.68.0 setup with NativeBase UI library v3.4.x &amp;
 - React native permissions v3.6.1
 - Axios v1.1.3 (with index.js file setup for post, get, put, delete)
 - React native toast message v2.1.5
-- React native vector icons v9.2.0 (un-done)
+- React native vector icons v9.2.0
 - React native fast image v8.6.1 (un-done)
 - React native webview v11.23.1 (un-done)
 - @async-storage v1.17.10, (un-done)
 - React native internet connection alert v0.1.9 (un-done)
 - React native background timer v2.4.1 (un-done)
 - React native image picker v4.10.0 (un-done)
-- React native gesture handler (import in app.js) (un-done)
+- yup, form filling etc. (from anirudh) & ask app.js file structure from anirudh, also ask other nativebase doubts
 
 # HELP / INFO
 
@@ -45,9 +45,17 @@ Basic react native project v0.68.0 setup with NativeBase UI library v3.4.x &amp;
    const xyz = async() => {
    var response = await getData('endpoint','body')
    }
-   
+
    where xyz is any function like pressHandler etc..
 
 9. Toast, always import & add <Toast /> at end of innercode in App.js
 
-10. 
+10. Vector-Icons, all the icon fonts have been integrated & we can use this way ->
+
+    import AntDesign from 'react-native-vector-icons/AntDesign'
+    import {Icon} from 'native-base'
+    <Icon as={AntDesign} name="meh" color="coolGray.800" size={20} />
+
+AntDesign is the name of font, you can replace the font name accordingly & find all the icon names for fonts here -> https://oblador.github.io/react-native-vector-icons/ (try avoiding fontAwesome5 icons, they might break code)
+
+11. 
