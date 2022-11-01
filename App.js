@@ -1,6 +1,6 @@
 import 'react-native-gesture-handler'; //remember to always import this
 import React from 'react';
-import {NativeBaseProvider, Text} from 'native-base';
+import {Box, NativeBaseProvider, Text} from 'native-base';
 import Toast from 'react-native-toast-message';
 import InternetConnectionAlert from 'react-native-internet-connection-alert';
 import {dismiss} from './src/assets/images';
@@ -27,8 +27,9 @@ const App = () => {
       }}
       message="We can't reach our network right now. Please check your internet connection.">
       <NativeBaseProvider>
-        <Text>App</Text>
-
+        <Box flex={1} alignItems="center" justifyContent="center">
+          <Text>App</Text>
+        </Box>
         {/** rest of the code here */}
 
         {/* 🚨 always import <Toast /> at the end of innercode ---> */}

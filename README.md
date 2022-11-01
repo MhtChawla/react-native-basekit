@@ -19,7 +19,7 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 - React native webview v11.23.1
 - @react-native-async-storage/async-storage
 - React native internet connection alert v0.1.9
-- React native background timer v2.4.1 (un-done)
+- React native background timer v2.4.1
 - React native image picker v4.10.0 (un-done)
 - yup, form filling etc. (from anirudh) & ask app.js file structure from anirudh, also ask other nativebase doubts
 
@@ -64,4 +64,19 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 
 13. Internet Connection Alert, cover the whole App.js with its <InternetConnectionAlert>{...rest of code}</InternetConnectionAlert> for alerts when internet goes down.
 
-14. 
+14. Background timer, good for using at otp screens where you need countdown to decrease as per seconds but the problem we face using useTimeout is, it only works in foreground. So to keep that countdown timer working in background. this plugin is installed. for basic example in using otp screen is following ->
+
+ import BackgroundTimer from 'react-native-background-timer';
+  const [countdown, setCountDown] = useState(10); //10 is 10 seconds here
+  useEffect(() => {
+    let timer =
+      countdown > 0 &&
+      BackgroundTimer.runBackgroundTimer(
+        () => setCountDown(countdown - 1), //useState here
+        1000,
+      );
+    return () => BackgroundTimer.stopBackgroundTimer(timer);
+  }, [countdown]);
+  return <Text>{countdown}</Text>
+
+15. 
