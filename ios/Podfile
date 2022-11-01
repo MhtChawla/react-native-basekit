@@ -23,6 +23,8 @@ target 'BaseKit' do
 
   pod 'react-native-background-timer', :path => '../node_modules/react-native-background-timer'
 
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
   target 'BaseKitTests' do
     inherit! :complete
     # Pods for testing

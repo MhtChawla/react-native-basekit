@@ -30,6 +30,7 @@ const App = () => {
         <Box flex={1} alignItems="center" justifyContent="center">
           <Text>App</Text>
         </Box>
+
         {/** rest of the code here */}
 
         {/* 🚨 always import <Toast /> at the end of innercode ---> */}
