@@ -16,8 +16,8 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 - React native toast message v2.1.5
 - React native vector icons v9.2.0
 - React native fast image v8.6.1
-- React native webview v11.23.1 (un-done)
-- @async-storage v1.17.10, (un-done)
+- React native webview v11.23.1
+- @react-native-async-storage/async-storage
 - React native internet connection alert v0.1.9 (un-done)
 - React native background timer v2.4.1 (un-done)
 - React native image picker v4.10.0 (un-done)
@@ -54,4 +54,12 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 
 11. Fast Image, always use <FastImage /> component rather than <Image>.
 
-12. 
+12. Async storage, library added but basic use is here ->
+
+    const xyz = async(value) => {
+    await AsyncStorage.setItem('key name', value)
+    }
+
+    where xyz is any function to store value here & we can get the same item using AsyncStorage.getItem('key name')
+
+13. 
