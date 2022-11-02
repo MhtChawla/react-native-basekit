@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Toast from 'react-native-toast-message';
 import {BASE_URL} from './config';
+import store from '../store';
 
 // --------------------- IMP -------------------------------------------------
 /* 
@@ -17,15 +18,19 @@ const axiosInstance = axios.create({
 
 // ----------------------------------------------------------------------
 const getData = async (endPoint, data) => {
+  store.setLoader(true);
   try {
     const result = await axiosInstance.get(endPoint, data);
     if (result) {
+      store.setLoader(false);
       console.log('--- API Response --->', result.data); //console response of every request
       return result;
     } else {
+      store.setLoader(false);
       Toast.show({type: 'error', text1: 'Something went wrong!'});
     }
   } catch (error) {
+    store.setLoader(false);
     Toast.show({
       type: 'error',
       text1: error.response.data?.message || 'Something went wrong!',
@@ -36,6 +41,7 @@ const getData = async (endPoint, data) => {
 };
 // ----------------------------------------------------------------------
 const postData = async (endPoint, data, formData = false) => {
+  store.setLoader(true);
   let headers = {};
   if (formData) {
     headers = {
@@ -45,12 +51,15 @@ const postData = async (endPoint, data, formData = false) => {
   try {
     const result = await axiosInstance.post(endPoint, data, {headers: headers});
     if (result) {
+      store.setLoader(false);
       console.log('--- API Response --->', result.data); //console response of every request
       return result;
     } else {
+      store.setLoader(false);
       Toast.show({type: 'error', text1: 'Something went wrong !'});
     }
   } catch (error) {
+    store.setLoader(false);
     Toast.show({
       type: 'error',
       text1: error.response.data?.message || 'Something went wrong !',

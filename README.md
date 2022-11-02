@@ -48,6 +48,8 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 
    where xyz is any function like pressHandler etc..
 
+   [also Loader is pre-added it starts as soon as you send call for API & stops as soon as response arrives]
+
 9. Toast, always import & add <Toast /> at end of innercode in App.js
 
 10. Vector-Icons, Use with <Icon /> from 'native-base' & find the icon names here -> https://oblador.github.io/react-native-vector-icons/ (try avoiding fontAwesome5 icons, they might break code)
