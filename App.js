@@ -7,14 +7,7 @@ import {dismiss} from './src/assets/images';
 
 const App = () => {
   return (
-    // wrap all the code in <InternetConnectionAlert> to show alerts when device is offline / internet down
-    <InternetConnectionAlert
-      errorImageSrc=""
-      errorColor="#E44937"
-      title=""
-      tapToCloseEnabled={true}
-      showCancel
-      cancelBtnImageSrc={dismiss}
+    <InternetConnectionAlert errorImageSrc="" errorColor="#E44937" title="" tapToCloseEnabled={true} showCancel cancelBtnImageSrc={dismiss}
       cancelBtnImageStyle={{
         height: 13,
         width: '100%',
@@ -27,13 +20,21 @@ const App = () => {
       }}
       message="We can't reach our network right now. Please check your internet connection.">
       <NativeBaseProvider>
+
         <Box flex={1} alignItems="center" justifyContent="center">
           <Text>App</Text>
         </Box>
+        
+        {/** 
+         * 
+         * 
+         * 
+         * rest of the code here
+         * 
+         * 
+         * 
+         *  */}
 
-        {/** rest of the code here */}
-
-        {/* 🚨 always import <Toast /> at the end of innercode ---> */}
         <Toast />
       </NativeBaseProvider>
     </InternetConnectionAlert>
