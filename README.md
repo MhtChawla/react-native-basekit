@@ -66,18 +66,18 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 
 14. Background timer, good for using at otp screens where you need countdown to decrease as per seconds but the problem we face using useTimeout is, it only works in foreground. So to keep that countdown timer working in background. this plugin is installed. for basic example in using otp screen is following ->
 
- import BackgroundTimer from 'react-native-background-timer';
-  const [countdown, setCountDown] = useState(10); //10 is 10 seconds here
-  useEffect(() => {
-    let timer =
-      countdown > 0 &&
-      BackgroundTimer.runBackgroundTimer(
-        () => setCountDown(countdown - 1), //useState here
-        1000,
-      );
-    return () => BackgroundTimer.stopBackgroundTimer(timer);
-  }, [countdown]);
-  return <Text>{countdown}</Text>
+    import BackgroundTimer from 'react-native-background-timer';
+      const [countdown, setCountDown] = useState(10); //10 is 10 seconds here
+      useEffect(() => {
+        let timer =
+          countdown > 0 &&
+          BackgroundTimer.runBackgroundTimer(
+            () => setCountDown(countdown - 1), //useState here
+            1000,
+          );
+        return () => BackgroundTimer.stopBackgroundTimer(timer);
+      }, [countdown]);
+      return <Text>{countdown}</Text>
 
 15. Image Picker & Image Capture, this library is implemented so that one can pick image from mobile's gallery or capture image from camera & then further use it. Check detailed but simplified example following ->
 
