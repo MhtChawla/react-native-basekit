@@ -66,109 +66,109 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 
 14. Background timer, good for using at otp screens where you need countdown to decrease as per seconds but the problem we face using useTimeout is, it only works in foreground. So to keep that countdown timer working in background. this plugin is installed. for basic example in using otp screen is following ->
 
-import BackgroundTimer from 'react-native-background-timer';
-const [countdown, setCountDown] = useState(10); //10 is 10 seconds here
-useEffect(() => {
-let timer =
-countdown > 0 &&
-BackgroundTimer.runBackgroundTimer(
-() => setCountDown(countdown - 1), //useState here
-1000,
-);
-return () => BackgroundTimer.stopBackgroundTimer(timer);
-}, [countdown]);
-return <Text>{countdown}</Text>
+ import BackgroundTimer from 'react-native-background-timer';
+  const [countdown, setCountDown] = useState(10); //10 is 10 seconds here
+  useEffect(() => {
+    let timer =
+      countdown > 0 &&
+      BackgroundTimer.runBackgroundTimer(
+        () => setCountDown(countdown - 1), //useState here
+        1000,
+      );
+    return () => BackgroundTimer.stopBackgroundTimer(timer);
+  }, [countdown]);
+  return <Text>{countdown}</Text>
 
 15. Image Picker & Image Capture, this library is implemented so that one can pick image from mobile's gallery or capture image from camera & then further use it. Check detailed but simplified example following ->
 
     <----Snippet------>
     <--for launch camera-->
-
+    
     import {launchCamera} from "react-native-image-picker";
-
+    
     const App = () => {
+    
+      const [imageUri, setImageUri] = useState(""); //declare state
 
-    const [imageUri, setImageUri] = useState(""); //declare state
+      const openCamera = () => {
+      let options = {
+        storageOptions: {
+          path: "images",
+          mediaType: "photo",
+        },
+        includeBase64: true,
+      };
+      launchCamera(options, response => {
+        if (response.didCancel) {
+          console.log("User cancelled the image picker");
+        } else if (response.error) {
+          console.log("Image pick error!", response.error);
+        } else if (response.customButton) {
+          console.log("User tapped custom button", response.customButton);
+        } else {
+          const source = {
+            uri: "data:image/jpeg;base64," + response.assets[0].base64,
+          };
+          setImageUri(source); //update state here
+        }
+       });
+      };
 
-    const openCamera = () => {
-    let options = {
-    storageOptions: {
-    path: "images",
-    mediaType: "photo",
-    },
-    includeBase64: true,
-    };
-    launchCamera(options, response => {
-    if (response.didCancel) {
-    console.log("User cancelled the image picker");
-    } else if (response.error) {
-    console.log("Image pick error!", response.error);
-    } else if (response.customButton) {
-    console.log("User tapped custom button", response.customButton);
-    } else {
-    const source = {
-    uri: "data:image/jpeg;base64," + response.assets[0].base64,
-    };
-    setImageUri(source); //update state here
-    }
-    });
-    };
-
-    return(
-    <Image source={imageUri}
-    style={{width:100,height:100}} //edit style by self
-    /> //trigger openCamera function as per your need
-    )
+      return(
+         <Image source={imageUri} 
+                style={{width:100,height:100}} //edit style by self
+          /> //trigger openCamera function as per your need
+        )
     }
     //also live camera may/may not work on ios simulator, you'll need a real testing device for that.
-
+    
     <----------------------------------------------------x---------------------------------------------------->
     <--for image picker from phone gallery-->
-
+    
     import {launchImageLibrary} from "react-native-image-picker";
-
+    
     const App = () => {
+    
+      const [galleryImageUri, setGalleryImageUri] = useState(""); //declare state
 
-    const [galleryImageUri, setGalleryImageUri] = useState(""); //declare state
+      const openGallery = () => {
+        let options = {
+          storageOptions: {
+            path: "images",
+            mediaType: "photo",
+          },
+          includeBase64: true,
+        };
+        launchImageLibrary(
+          options,
+          response => {
+            // console.log("Response", response);
+            if (response.didCancel) {
+              console.log("User cancelled the image picker");
+            } else if (response.error) {
+              console.log("Image pick error!", response.error);
+            } else if (response.customButton) {
+              console.log("User tapped custom button", response.customButton);
+            } else {
+              const source = {
+                uri: "data:image/jpeg;base64," + response.assets[0].base64,
+              };
+              setGalleryImageUri(source); //update state here
+            }
+          },
+        );
+      };
 
-    const openGallery = () => {
-    let options = {
-    storageOptions: {
-    path: "images",
-    mediaType: "photo",
-    },
-    includeBase64: true,
-    };
-    launchImageLibrary(
-    options,
-    response => {
-    // console.log("Response", response);
-    if (response.didCancel) {
-    console.log("User cancelled the image picker");
-    } else if (response.error) {
-    console.log("Image pick error!", response.error);
-    } else if (response.customButton) {
-    console.log("User tapped custom button", response.customButton);
-    } else {
-    const source = {
-    uri: "data:image/jpeg;base64," + response.assets[0].base64,
-    };
-    setGalleryImageUri(source); //update state here
+      return(
+          <Image source={galleryImageUri} 
+                 style={{width:100,height:100}} //edit style by self
+           /> //trigger openGallery function as per your need
+       )
     }
-    },
-    );
-    };
-
-    return(
-    <Image source={galleryImageUri}
-    style={{width:100,height:100}} //edit style by self
-    /> //trigger openGallery function as per your need
-    )
-    }
-
+    
     <----------------------------------------------------x---------------------------------------------------->
     <----Snippet------>
-
+    
     github link: https://github.com/react-native-image-picker/react-native-image-picker
 
-16.
+16. 
