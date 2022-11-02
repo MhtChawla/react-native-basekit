@@ -19,7 +19,7 @@ const axiosInstance = axios.create({
 const getData = async (endPoint, data) => {
   try {
     const result = await axiosInstance.get(endPoint, data);
-    if (result && result.data) {
+    if (result) {
       console.log('--- API Response --->', result.data); //console response of every request
       return result;
     } else {
