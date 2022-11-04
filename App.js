@@ -4,6 +4,9 @@ import {Box, NativeBaseProvider, Text} from 'native-base';
 import Toast from 'react-native-toast-message';
 import InternetConnectionAlert from 'react-native-internet-connection-alert';
 import {dismiss} from './src/assets/images';
+import Loader from './src/components/Loader';
+import store from './src/store'
+import { observer } from 'mobx-react-lite';
 
 const App = () => {
   return (
@@ -34,11 +37,12 @@ const App = () => {
          * 
          * 
          *  */}
-
+         
+        <Loader isLoading={store.loader}/>
         <Toast />
       </NativeBaseProvider>
     </InternetConnectionAlert>
   );
 };
 
-export default App;
+export default observer(App);
