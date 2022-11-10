@@ -9,7 +9,7 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 - Basic folder structure
 - React native reanimated v2.11.0
 - React Navigation (stack, tab & drawer) v6.x
-- Responsive file added in utils (learn from anirudh)
+- Responsive file added in utils
 - MobxStateTree or MST (state management)
 - React native permissions v3.6.1
 - Axios v1.1.3 (with index.js file setup for post, get, put, delete)
@@ -21,7 +21,6 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 - React native internet connection alert v0.1.9
 - React native background timer v2.4.1
 - React native image picker v4.10.0 (un-done)
-- yup, form filling etc. (from anirudh) & ask app.js file structure from anirudh, also ask other nativebase doubts
 
 # HELP / INFO
 
@@ -31,7 +30,7 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 
 3. Reanimated, always import this at top of app.js -> import 'react-native-gesture-handler'
 
-4. Responsive-ui, file added in src/utils/responsive-ui.js use.......
+4. Responsive-ui, file added in src/utils/responsive-ui.js use it accordingly.
 
 5. MST, just read the doc in src/store/help.txt
 
@@ -173,4 +172,4 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
     
     github link: https://github.com/react-native-image-picker/react-native-image-picker
 
-16. 
+<----------- x  THE END  x ----------->
