@@ -20,7 +20,7 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 - @react-native-async-storage/async-storage
 - React native internet connection alert v0.1.9
 - React native background timer v2.4.1
-- React native image picker v4.10.0 (un-done)
+- React native image picker v4.10.0
 
 # HELP / INFO
 
