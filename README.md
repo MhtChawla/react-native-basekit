@@ -4,6 +4,19 @@
 
 ![ReactNative](https://img.shields.io/badge/React%20Native-v0.68-blue)
 ![NativeBase](https://img.shields.io/badge/NativeBase-v3.4-critical)
+![MST](https://img.shields.io/badge/Mobx--State--Tree-state-blueviolet)
+![ReactNavigation](https://img.shields.io/badge/React%20Navigation-v6.x-yellow)
+![axios](https://img.shields.io/badge/axios-v1.1.3-success)
+![react-native-vector-icons](https://img.shields.io/badge/react--native--vector--icons-v9.2.0-ff69b4)
+![react-native-permissions](https://img.shields.io/badge/react--native--permissions-v3.6.1-critical)
+![webview](https://img.shields.io/badge/webview-v11.23.1-blue)
+![async](https://img.shields.io/badge/async%20storage-v1.17.10-success)
+![toast](https://img.shields.io/badge/React%20native%20toast%20message-v2.1.5-blue)
+![internet-connection-alert](https://img.shields.io/badge/internet--connection--alert-v0.1.9-9cf)
+![background-timer](https://img.shields.io/badge/react--native--background--timer-v2.4.1-green)
+![fast-image](https://img.shields.io/badge/react--native--fast--image-v8.6.1-red)
+![Responsive](https://img.shields.io/badge/Responsive--ui-.%2Fsrc%2Futils-important)
+![image-picker](https://img.shields.io/badge/react--native--image--picker-v4.10-blueviolet)
 
 # Intro
 
