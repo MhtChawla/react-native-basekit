@@ -1,6 +1,6 @@
 # Intro
 
-Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI library v3.4.x &amp; preset folder structure &amp; other basic necessties
+Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI library, preset folder structure &amp; other basic necessties
 
 # Use
 
