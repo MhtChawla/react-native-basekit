@@ -136,7 +136,7 @@ for alerts when internet goes down.
 
 15. Image Picker & Image Capture, this library is implemented so that one can pick image from mobile's gallery or capture image from camera & then further use it. Check detailed but simplified example following ->
 
-   ```sh
+```sh
     <--for launch camera-->
     
     import {launchCamera} from "react-native-image-picker";
@@ -175,11 +175,11 @@ for alerts when internet goes down.
           /> //trigger openCamera function as per your need
         )
     }
-    ```
+```
     also live camera may/may not work on ios simulator, you'll need a real testing device for that.
     
 
-    ```sh
+```sh
     <--for image picker from phone gallery-->
     
     import {launchImageLibrary} from "react-native-image-picker";
@@ -224,7 +224,7 @@ for alerts when internet goes down.
     }
   
     <----------------------------------------------------x---------------------------------------------------->
-    ```
+```
     
     github link: https://github.com/react-native-image-picker/react-native-image-picker
 
