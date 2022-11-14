@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="documentation/static/img/TOM-Legend.png" alt="Logo" width="100%">
+    <img src="" alt="Logo" width="100%">
 </div>
 
 ![ReactNative](https://img.shields.io/badge/React%20Native-v0.68-blue)
