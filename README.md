@@ -4,9 +4,9 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 
 # Use
 
-1. Clone the template repository
+1. Open terminal & clone template repository
 ```sh
-https://github.com/MhtChawla/react-native-basekit.git
+git clone https://github.com/MhtChawla/react-native-basekit.git
 ```
 
 2. Go to root directory of project & install the node modules for android as well as IOS
