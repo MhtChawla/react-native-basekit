@@ -13,7 +13,7 @@
 
 # Intro
 
-Basic [React Native](https://facebook.github.io/react-native/) project v0.68.0 (openjdk64-18) setup with [NativeBase](https://nativebase.io/) UI library, preset folder structure &amp; other basic necessties
+Basic React Native project v0.68.0 (openjdk64-18) setup with NativeBase UI library, preset folder structure &amp; other basic necessties
 
 # Use
 
