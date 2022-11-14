@@ -31,7 +31,9 @@ https://github.com/MhtChawla/react-native-basekit.git
 
 2. Go to root directory of project & install the node modules for android as well as IOS
 ```sh
-cd react-native-basekit && yarn install && cd ios && pod install && cd ..
+cd react-native-basekit 
+yarn install
+cd ios && pod install
 ```
 
 
