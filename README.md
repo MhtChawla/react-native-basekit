@@ -83,11 +83,12 @@ cd ios && pod install
 
 7. Config.js, please provide ```APP_NAME, BASE_URL``` of your app here and other config details (if any)!
 
-8. axios.js, easily send post & get calls on api using functions at src/utils/axios.js. USE LIKE THIS IN APP -->
-
+8. axios.js, easily send post & get calls on api using functions at ```src/utils/axios.js```. USE LIKE THIS IN APP -->
+```sh
    const xyz = async() => {
    var response = await getData('endpoint','body')
    }
+   ```
 
    where xyz is any function like pressHandler etc..
 
