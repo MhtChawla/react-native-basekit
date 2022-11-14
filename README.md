@@ -36,7 +36,7 @@ yarn install
 cd ios && pod install
 ```
 
-3. Edit App.js & enjoy pre-added packages & configs (don't forget to read below #Info)
+3. Edit ```sh App.js ``` & enjoy pre-added packages & configs (don't forget to read below #Info)
 
 
 # Help / Info
