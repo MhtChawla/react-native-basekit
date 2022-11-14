@@ -105,11 +105,11 @@ cd ios && pod install
     const xyz = async(value) => {
     await AsyncStorage.setItem('key name', value)
     }
-    ```
+```
 
     where xyz is any function to store value here & we can get the same item using AsyncStorage.getItem('key name')
 
-13. Internet Connection Alert, cover the whole App.js with its
+13. Internet Connection Alert, cover the whole App.js with its 
 ```sh
 <InternetConnectionAlert>
  {...rest of code}
@@ -119,7 +119,7 @@ for alerts when internet goes down.
 
 14. Background timer, good for using at otp screens where you need countdown to decrease as per seconds but the problem we face using useTimeout is, it only works in foreground. So to keep that countdown timer working in background. this plugin is installed. for basic example in using otp screen is following ->
 
-<!-- ```sh -->
+```sh
     import BackgroundTimer from 'react-native-background-timer';
       const [countdown, setCountDown] = useState(10); //10 is 10 seconds here
       useEffect(() => {
@@ -132,7 +132,7 @@ for alerts when internet goes down.
         return () => BackgroundTimer.stopBackgroundTimer(timer);
       }, [countdown]);
       return (<Text>{countdown}</Text>)
-      ```
+```
 
 15. Image Picker & Image Capture, this library is implemented so that one can pick image from mobile's gallery or capture image from camera & then further use it. Check detailed but simplified example following ->
 
@@ -178,7 +178,6 @@ for alerts when internet goes down.
     ```
     also live camera may/may not work on ios simulator, you'll need a real testing device for that.
     
-    <----------------------------------------------------x---------------------------------------------------->
 
     ```sh
     <--for image picker from phone gallery-->
