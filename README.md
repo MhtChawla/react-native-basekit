@@ -68,7 +68,7 @@ cd ios && pod install
 
 # Help / Info
 
-1. NativeBase, sometimes space={2}, space={3} etc.. prop does n't work so there is premade component for that <AddSpace> in src/utils/AddSpace.js - just use as wrapper & it'll add spaces.
+1. NativeBase, sometimes space={2}, space={3} etc.. prop does n't work so there is premade component for that ```<AddSpace> in src/utils/AddSpace.js``` - just use as wrapper & it'll add spaces.
 
 2. NativeBase, wrap App.js around <NativeBaseProvider> & to write full code
 
