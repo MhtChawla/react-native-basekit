@@ -8,6 +8,8 @@ import Loader from './src/components/Loader';
 import store from './src/store'
 import { observer } from 'mobx-react-lite';
 
+// Don't forget to add your App name in './src/utils/config.js'
+
 const App = () => {
   return (
     <InternetConnectionAlert errorImageSrc="" errorColor="#E44937" title="" tapToCloseEnabled={true} showCancel cancelBtnImageSrc={dismiss}
