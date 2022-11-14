@@ -38,7 +38,7 @@ cd ios && pod install
 3. Edit ```App.js``` & enjoy pre-added packages / configs (don't forget to read below #Info)
 
 
-# This repo includes setup of following packages
+# This repo includes configuration of following packages
 
 - React Native v0.68
 - NativeBase (UI library) v3.4.x
