@@ -1,8 +1,8 @@
-# react-native-basekit
+# Intro
 
 Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI library v3.4.x &amp; preset folder structure &amp; other basic necessties
 
-# This repo includes setup of following
+# This repo includes setup of following packages
 
 - React Native v0.68
 - NativeBase (UI library) v3.4.x
