@@ -1,8 +1,25 @@
-# react-native-basekit
+# Intro
 
 Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI library v3.4.x &amp; preset folder structure &amp; other basic necessties
 
-# This repo includes setup of following
+# Use
+
+1. Open terminal & clone template repository
+```sh
+git clone https://github.com/MhtChawla/react-native-basekit.git
+```
+
+2. Go to root directory of project & install the node modules for android as well as IOS
+```sh
+cd react-native-basekit 
+yarn install
+cd ios && pod install
+```
+
+3. Edit ```App.js``` & enjoy pre-added packages / configs (don't forget to read below #Info)
+
+
+# This repo includes setup of following packages
 
 - React Native v0.68
 - NativeBase (UI library) v3.4.x
@@ -21,18 +38,6 @@ Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI libra
 - React native internet connection alert v0.1.9
 - React native background timer v2.4.1
 - React native image picker v4.10.0
-
-# Use
-
-1. Clone the template repository
-```sh
-https://github.com/MhtChawla/react-native-basekit.git
-```
-
-2. Go to root directory of project & install the node modules for android as well as IOS
-```sh
-cd react-native-basekit && yarn install && cd ios && pod install && cd ..
-```
 
 
 # Help / Info
