@@ -109,16 +109,17 @@ cd ios && pod install
 
     where xyz is any function to store value here & we can get the same item using AsyncStorage.getItem('key name')
 
-13. Internet Connection Alert, cover the whole App.js with its 
+13. Internet Connection Alert, cover the whole App.js with its
 ```sh
 <InternetConnectionAlert>
  {...rest of code}
-</InternetConnectionAlert> ```
+</InternetConnectionAlert> 
+```
 for alerts when internet goes down.
 
 14. Background timer, good for using at otp screens where you need countdown to decrease as per seconds but the problem we face using useTimeout is, it only works in foreground. So to keep that countdown timer working in background. this plugin is installed. for basic example in using otp screen is following ->
 
-```sh
+<!-- ```sh -->
     import BackgroundTimer from 'react-native-background-timer';
       const [countdown, setCountDown] = useState(10); //10 is 10 seconds here
       useEffect(() => {
@@ -227,3 +228,4 @@ for alerts when internet goes down.
     ```
     
     github link: https://github.com/react-native-image-picker/react-native-image-picker
+
