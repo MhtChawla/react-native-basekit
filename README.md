@@ -13,7 +13,13 @@
 
 # Intro
 
-Basic React Native project v0.68.0 (openjdk64-18) setup with NativeBase UI library, preset folder structure &amp; other basic necessties
+This project is a basic [React Native](https://facebook.github.io/react-native/) template that can be used to kickstart a mobile application. This is basically a complete package of
+- [NativeBase](https://nativebase.io/) for styled components
+- [Mobx-State-Tree](https://mobx-state-tree.js.org/intro/getting-started) for state management
+- [Axios](https://www.npmjs.com/package/axios) for API calls
+- [React Navigation](https://reactnavigation.org/) for navigation
+- [React-native-vector-icons](https://www.npmjs.com/package/react-native-vector-icons) for vector icons 
+& much more
 
 # Use
 
@@ -42,7 +48,7 @@ cd ios && pod install
 - Responsive file added in utils
 - MobxStateTree or MST (state management)
 - React native permissions v3.6.1
-- Axios v1.1.3 (with index.js file setup for post, get, put, delete)
+- Axios v1.1.3 (with index.js file setup for post, get etc.)
 - React native toast message v2.1.5
 - React native vector icons v9.2.0
 - React native fast image v8.6.1
