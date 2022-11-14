@@ -36,6 +36,8 @@ yarn install
 cd ios && pod install
 ```
 
+3. Now edit App.js & enjoy (don't forget to read below #Info)
+
 
 # Help / Info
 
