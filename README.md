@@ -1,6 +1,19 @@
+<div align="center">
+    <img src="documentation/static/img/TOM-Legend.png" alt="Logo" width="100%">
+</div>
+
+![React Native Boilerplate License](https://img.shields.io/github/license/thecodingmachine/react-native-boilerplate)
+![React Native Boilerplate Version](https://flat.badgen.net/npm/v/@thecodingmachine/react-native-boilerplate)
+![React Native Boilerplate Release Date](https://img.shields.io/github/release-date/thecodingmachine/react-native-boilerplate)
+![React Native Boilerplate Download](https://flat.badgen.net/npm/dt/@thecodingmachine/react-native-boilerplate)
+![React Native Boilerplate Stars](https://img.shields.io/github/stars/thecodingmachine/react-native-boilerplate)
+![React Native Boilerplate Top Language](https://img.shields.io/github/languages/top/thecodingmachine/react-native-boilerplate)
+![React Native Boilerplate TypeScript](https://badgen.net/npm/types/tslib)
+[![CI](https://github.com/thecodingmachine/react-native-boilerplate/actions/workflows/CI.yml/badge.svg)](https://github.com/thecodingmachine/react-native-boilerplate/actions/workflows/CI.yml)
+
 # Intro
 
-Basic react native project v0.68.0 (openjdk64-18) setup with NativeBase UI library, preset folder structure &amp; other basic necessties
+Basic [React Native](https://facebook.github.io/react-native/) project v0.68.0 (openjdk64-18) setup with [NativeBase](https://nativebase.io/) UI library, preset folder structure &amp; other basic necessties
 
 # Use
 
