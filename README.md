@@ -70,18 +70,18 @@ cd ios && pod install
 
 1. NativeBase, sometimes space={2}, space={3} etc.. prop does n't work so there is premade component for that ```<AddSpace> in src/utils/AddSpace.js``` - just use as wrapper & it'll add spaces.
 
-2. NativeBase, wrap App.js around <NativeBaseProvider> & to write full code
+2. NativeBase, wrap App.js around ```<NativeBaseProvider>``` & to write full code
 
-3. Reanimated, always import this at top of app.js -> import 'react-native-gesture-handler'
+3. Reanimated, always import this at top of app.js -> ```import 'react-native-gesture-handler'```
 
-4. Responsive-ui, file added in src/utils/responsive-ui.js use it accordingly.
+4. Responsive-ui, file added in ```src/utils/responsive-ui.js``` use it accordingly.
 
-5. MST, just read the doc in src/store/help.txt
+5. MST, just read the use/help doc in ```src/store/help.txt```
 
-6. React-native Permissions, info.plist for ios & androidmanifest.xml for android, uncomment permission you want to use in app & use function
-   requestDevicePermission('permission name') from src/utils/request-permissions.js
+6. React-native Permissions, in files ```info.plist``` for ios & ```androidmanifest.xml``` for android, uncomment permission you want to use in app & use function
+   ```requestDevicePermission('permission name') ``` from ```src/utils/request-permissions.js```
 
-7. Config.js, please provide APP_NAME, BASE_URL of your app here and other config details (if any)!
+7. Config.js, please provide ```APP_NAME, BASE_URL``` of your app here and other config details (if any)!
 
 8. axios.js, easily send post & get calls on api using functions at src/utils/axios.js. USE LIKE THIS IN APP -->
 
