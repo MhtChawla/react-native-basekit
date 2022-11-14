@@ -176,8 +176,8 @@ for alerts when internet goes down.
         )
     }
 ```
-    also live camera may/may not work on ios simulator, you'll need a real testing device for that.
-    
+
+    Also live camera may/may not work on ios simulator, you'll need a real testing device for that.
 
 ```sh
     <--for image picker from phone gallery-->
