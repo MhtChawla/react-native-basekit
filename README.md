@@ -94,24 +94,32 @@ cd ios && pod install
 
    [also Loader is pre-added it starts as soon as you send call for API & stops as soon as response arrives]
 
-9. Toast, always import & add <Toast /> at end of innercode in App.js
+9. Toast, always import & add ```<Toast />``` at ```end``` of innercode in App.js
 
-10. Vector-Icons, Use with <Icon /> from 'native-base' & find the icon names here -> https://oblador.github.io/react-native-vector-icons/ (try avoiding fontAwesome5 icons, they might break code)
+10. Vector-Icons, Use with ```<Icon />``` from 'native-base' & find the icon names here -> https://oblador.github.io/react-native-vector-icons/ (try avoiding fontAwesome5 icons, they might break code)
 
-11. Fast Image, always use <FastImage /> component rather than <Image>.
+11. Fast Image, always use ```<FastImage />``` component rather than ```<Image>```.
 
 12. Async storage, library added but basic use is here ->
-
+```sh
     const xyz = async(value) => {
     await AsyncStorage.setItem('key name', value)
     }
+    ```
 
     where xyz is any function to store value here & we can get the same item using AsyncStorage.getItem('key name')
 
-13. Internet Connection Alert, cover the whole App.js with its <InternetConnectionAlert>{...rest of code}</InternetConnectionAlert> for alerts when internet goes down.
+13. Internet Connection Alert, cover the whole App.js with its 
+```sh
+<InternetConnectionAlert>
+ {...rest of code}
+</InternetConnectionAlert> 
+```
+for alerts when internet goes down.
 
 14. Background timer, good for using at otp screens where you need countdown to decrease as per seconds but the problem we face using useTimeout is, it only works in foreground. So to keep that countdown timer working in background. this plugin is installed. for basic example in using otp screen is following ->
 
+```sh
     import BackgroundTimer from 'react-native-background-timer';
       const [countdown, setCountDown] = useState(10); //10 is 10 seconds here
       useEffect(() => {
@@ -123,11 +131,12 @@ cd ios && pod install
           );
         return () => BackgroundTimer.stopBackgroundTimer(timer);
       }, [countdown]);
-      return <Text>{countdown}</Text>
+      return (<Text>{countdown}</Text>)
+      ```
 
 15. Image Picker & Image Capture, this library is implemented so that one can pick image from mobile's gallery or capture image from camera & then further use it. Check detailed but simplified example following ->
 
-    <----Snippet------>
+   ```sh
     <--for launch camera-->
     
     import {launchCamera} from "react-native-image-picker";
@@ -166,9 +175,12 @@ cd ios && pod install
           /> //trigger openCamera function as per your need
         )
     }
-    //also live camera may/may not work on ios simulator, you'll need a real testing device for that.
+    ```
+    also live camera may/may not work on ios simulator, you'll need a real testing device for that.
     
     <----------------------------------------------------x---------------------------------------------------->
+
+    ```sh
     <--for image picker from phone gallery-->
     
     import {launchImageLibrary} from "react-native-image-picker";
@@ -211,10 +223,8 @@ cd ios && pod install
            /> //trigger openGallery function as per your need
        )
     }
-    
+  
     <----------------------------------------------------x---------------------------------------------------->
-    <----Snippet------>
+    ```
     
     github link: https://github.com/react-native-image-picker/react-native-image-picker
-
-<----------- x  THE END  x ----------->
