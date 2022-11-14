@@ -113,8 +113,7 @@ cd ios && pod install
 ```sh
 <InternetConnectionAlert>
  {...rest of code}
-</InternetConnectionAlert> 
-```
+</InternetConnectionAlert> ```
 for alerts when internet goes down.
 
 14. Background timer, good for using at otp screens where you need countdown to decrease as per seconds but the problem we face using useTimeout is, it only works in foreground. So to keep that countdown timer working in background. this plugin is installed. for basic example in using otp screen is following ->
