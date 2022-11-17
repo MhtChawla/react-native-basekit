@@ -28,6 +28,6 @@ const user = UserModel.create({
 export default user;
 
 3. wrap the component where you need to use actions while exporting like this -> export default observer(HomeScreen)
-& import observer from 'mobx state lite' 
+& import {observer} from "mobx-react-lite";
    
 # --------------------------------------------------------------------------------
