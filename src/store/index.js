@@ -36,6 +36,8 @@ const UserModel = types
   .model('User', {
     firstName: types.string,
     loader: types.boolean,
+    statusBarColor: types.string,
+
     /* hospitalNames: types.array(HospitalType), // here is way to define that type
     hospitalServices: types.array(HospitalType), // here is way to define that type
     loanPlans: types.array(PlanType), // here is way to define that type */
@@ -51,6 +53,9 @@ const UserModel = types
    
     setLoader(value) {
       self.loader = value;
+    },
+    setStatusBarColor(value) {
+      self.statusBarColor = value;
     },
   
   /*  setHospitalNames(jsonData) {
@@ -81,6 +86,7 @@ const UserModel = types
 const user = UserModel.create({
   firstName: '',
   loader: false,
+  statusBarColor: '',
  
  /* hospitalNames: [],
   hospitalServices: [],

@@ -3,6 +3,7 @@
 1. install mobx & mobx state lite
 2. create a file of store.js & declare 
 
+```sh
 const UserModel = types
  .model('User', {
     firstName: types.string,
@@ -26,8 +27,12 @@ const user = UserModel.create({
 })
 
 export default user;
+```
 
-3. wrap the component where you need to use actions while exporting like this -> export default observer(HomeScreen)
-& import {observer} from "mobx-react-lite";
-   
+3. wrap your whole App.js with observer like following (without this, actions like setFirstName('') won't be executed)
+```sh
+import {observer} from "mobx-react-lite"
+...
+export default observer(App)
+```
 # --------------------------------------------------------------------------------

@@ -228,3 +228,4 @@ for alerts when internet goes down.
     
     github link: https://github.com/react-native-image-picker/react-native-image-picker
 
+16. Status Bar, ```<CustomStatusBar />``` is imported in ```App.js``` & statusBarColor/setStatusBarColor state from store is given throughout app. So to change statusbar color in any screen, you just have to call setStatusBarColor("your color") in useEffect [] while rendering on that component/screen.
