@@ -81,7 +81,7 @@ cd ios && pod install
 6. React-native Permissions, in files ```info.plist``` for ios & ```androidmanifest.xml``` for android, uncomment permission you want to use in app & use function
    ```requestDevicePermission('permission name') ``` from ```src/utils/request-permissions.js```
 
-7. Config.js, please provide ```APP_NAME, BASE_URL``` of your app here and other config details (if any)!
+7. Config.js, please provide ```APP_NAME, BASE_URL``` of your app here and other config details (if any), Also if this project is cloned, rename your app in package.json, strings.xml & also change your appid in androidmanifest. <br> After changing appid, search for previous appid throughout project & replace with new one.<br> After everything is done, goto ./android & run ./gradlew clean
 
 8. axios.js, easily send post & get calls on api using functions at ```src/utils/axios.js```. USE LIKE THIS IN APP -->
 ```sh
