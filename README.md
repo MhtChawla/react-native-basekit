@@ -2,6 +2,8 @@
     <img src="" alt="Logo" width="100%">
 </div>
 
+[Imp: use ruby 2.7.4]
+
 ![ReactNative](https://img.shields.io/badge/React%20Native-v0.68-blue)
 ![NativeBase](https://img.shields.io/badge/NativeBase-v3.4-critical)
 ![MST](https://img.shields.io/badge/Mobx--State--Tree-state-blueviolet)
